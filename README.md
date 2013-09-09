@@ -1,15 +1,22 @@
-=====
-HOWTO
-=====
+# README
 
-= RUNNING THE APPLICATION =
+## RUNNING THE APPLICATION
+To launch RS, from terminal (in the main folder):
+		$ python rs.py
+You may now open a ENVI Header (.hdr) image, and calculate the IBI on it.
 
-To launch RSApp, from terminal (in this folder):
-$ python rs.py
-
-
-= REQUIREMENTS =
-
+## REQUIREMENTS
 * Python >= 2.7
-* PIL python library. See doc for installing it on Mac OSX. (http://www.pythonware.com/products/pil/)
+* PIL python library. (http://www.pythonware.com/products/pil/).
 * SPy python module (http://spectralpython.sourceforge.net/)
+
+## TROUBLESHOOTING
+### Installing PIL under OSX
+To install PIL library under OSX follow this instruction, from terminal:
+		curl -O -L http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+		# extract
+		tar -xzf Imaging-1.1.7.tar.gz
+		cd Imaging-1.1.7
+		# build and install
+		python setup.py build
+		sudo python setup.py install
